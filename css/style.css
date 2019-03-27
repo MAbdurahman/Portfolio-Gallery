@@ -1,0 +1,243 @@
+/*-------- Stylesheet for Portfolio-Gallery --------*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #d8d8d8;
+}
+.sect {
+    height:  100%;
+
+}
+.sect h2 {
+    color:  #2c3e50;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-size:  4rem;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+/*/////////PORTFOLIO SECTION /////////////*/
+#filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sect-three ul {
+    padding: 0 0 30px 0;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.sect-three ul li {
+    list-style:  none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 10px 20px;
+    background:  #2c3e50;
+    color:  #9aa7a4;
+    margin-right: 15px;
+    font-family: sans-serif arial;
+    font-size: 2.75rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid #2c3e50;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.sect-three ul li:hover,
+.sect-three ul li:focus,
+.sect-three ul li.active {
+    color:  #2c3e50;
+    background:  #9aa7a4;
+}
+.sect-three .thumbnail {
+    padding-top: 5px;
+    color: #2c3e50;
+    border: 3px solid #2c3e50;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.sect-three .thumbnail .btn {
+    position: relative;
+    left: 20%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.sect-three img {
+    padding-bottom: 5px;
+}
+.sect-three h4 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+}
+/*--- For-phone-only ---*/
+@media (max-width: 599px) {
+    .sect h2 {
+        font-size: 2rem;
+    }
+    .sect-three ul {
+        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .sect-three ul li {
+        font-size: .83rem;
+        height: 33px;
+        padding: 3px 5px;
+    }
+    .sect-three .thumbnail .btn {
+        font-size: .83rem;
+        left: 10%;
+    }
+}
+/*--- Tablets-Portrait-Up ---*/
+@media (min-width: 37.5em) {
+    .sect h2 {
+        font-size: 3rem;
+    }
+    .sect-three ul {
+        width: 98%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .sect-three ul li {
+        font-size: 1.5rem;
+        height: 50px;
+        padding: 5px 8px;
+    }
+
+}
+/*--- Desktop-Up ---*/
+@media (min-width: 75em) {
+    html {
+        font-size: 100%
+    }
+    .sect h2 {
+        margin-top: -2%;
+        margin-bottom: 0;
+    }
+    .sect-three ul {
+        width: 98%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .sect-three ul li {
+        font-size: 1.2rem;
+        height: 70px;
+        padding: 8px 13px;
+    }
+    .sect-three .thumbnail .btn {
+        font-size: .83rem;
+        left: 20%;
+    }
+
+}
+
+/*/////////SERVICE SECTION /////////////*/
+
+.sect-four {
+
+    /*background-color:  #90c2d9;
+    background-color:  green; */
+}
+.sect-four h4 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.sect-four p {
+    font-weight: 500;
+}
+.sect-four .thumbnail {
+    color: #2c3e50;
+    border: 3px solid #2c3e50;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+#service-section .frame {
+    background-color: #9aa7a4;
+}
+#service-section .caption {
+    color: #2c3e50;
+    background-color: #9aa7a4;
+}
+
+/*/////////CONTACT SECTION /////////////*/
+
+.sect-five h2 {
+    text-align: center;
+}
+
+.sect-five input,
+.sect-five textarea,
+.sect-five button {
+    width: 100%;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.sect-five input {
+    height: 40px;
+}
+.sect-five textarea {
+    height: 200px;
+}
+.sect-five button {
+    background-color: #2c3e50;
+    color: #9aa7a4;
+    height: 55px;
+}
+
+
+@media  only screen and (min-device-width: 768px) {
+    .sect-five .form-container {
+        padding: 5%;
+        background-color: #9aa7a4;
+        max-width: 75%;
+        margin: 2% auto 5%;
+        border: 3px solid #2c3e50;
+        -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    }
+
+}
+/*--- For-phone-only ---*/
+@media (max-width: 599px) {
+    .sect-five .form-container {
+        padding: 5%;
+        background-color: #9aa7a4;
+        max-width: 98%;
+        margin: 2% auto 5%;
+        border: 3px solid #2c3e50;
+        -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    }
+}
